@@ -24,3 +24,7 @@ class Main3{
 - The result will be nothing because nothing is passed as argument.
 - The result will be printed if we pass any arguments for the main function. We do this when we want to give an inut for the java program itself.
 
+JAVA Virtual Machine (JVM):
+---------------------------
+-Java file code id converted into its byte code by compiler
+-Then the class loader in JVM brings in the class files then the byte code verifier verifies the code and finally execution engine executes the code. 
