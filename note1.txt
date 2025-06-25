@@ -1,1 +1,26 @@
+JAVA : Saved as .Java file
+--------------------------
+A electronic device that is used to perform computation. Computer can understand only electronic signals.
+After writing a code the high level instruction is converted into its bytecode by java compiler. This bytecode is stored in .classfile.
+- the machine code in .classfile is not understood by any platforms but only by JVM (which resides in ram of os).
+- when the jvm is fed with the bytecode it identifies the latform it is working on.
+- it then converts the byte code into its native machine code.
+- This code can run in any platforms.
+
+2. Command Line Arguments:
+--------------------------
+public static void main(String[] args) - " (String[] args) " - Command Line Argument.
+- here for the main function we have command line arguments.
+
+import java.util.*;
+class Main3{
+	public static void main(String args[]) {
+		for(int i=0;i<args.length;i++) {
+			System.out.println(args[i]);
+		}
+	}
+}
+
+- The result will be nothing because nothing is passed as argument.
+- The result will be printed if we pass any arguments for the main function. We do this when we want to give an inut for the java program itself.
 
