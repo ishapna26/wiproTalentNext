@@ -26,5 +26,10 @@ class Main3{
 
 JAVA Virtual Machine (JVM):
 ---------------------------
--Java file code id converted into its byte code by compiler
+-Java file code is converted into its byte code by compiler.
 -Then the class loader in JVM brings in the class files then the byte code verifier verifies the code and finally execution engine executes the code. 
+
+
+How does oop differ from structures in c:
+----------------------------------------
+BECAUSE in structure we can only have datas as its properties/members but not methods. Where as in OOPS we can have datas along with methods/properties inside the class.
