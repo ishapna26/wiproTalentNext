@@ -33,3 +33,5 @@ JAVA Virtual Machine (JVM):
 How does oop differ from structures in c:
 ----------------------------------------
 BECAUSE in structure we can only have datas as its properties/members but not methods. Where as in OOPS we can have datas along with methods/properties inside the class.
+
+
