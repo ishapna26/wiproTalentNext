@@ -32,9 +32,16 @@ JAVA Virtual Machine (JVM):
 JAVA IO STREAMS:
 ----------------
 Java provides various Streams with its I/O package that helps the user to perform all the input-output operations. These streams support all the types of objects, data-types, characters, files, etc., to fully execute the I/O operations.
+
 The streams can be classifies into:
 * Byte Stream
 * Character Stream
+
+System Properties: (GET- getProperties(info about local device) and SET setProperties(set some properties for the local device))
+- The system properties provide information about local system configuration.
+- When JVM starts it inserts local system properties into the system.
+
+
 
 
 
