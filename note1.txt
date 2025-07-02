@@ -29,6 +29,14 @@ JAVA Virtual Machine (JVM):
 -Java file code is converted into its byte code by compiler.
 -Then the class loader in JVM brings in the class files then the byte code verifier verifies the code and finally execution engine executes the code. 
 
+JAVA IO STREAMS:
+----------------
+Java provides various Streams with its I/O package that helps the user to perform all the input-output operations. These streams support all the types of objects, data-types, characters, files, etc., to fully execute the I/O operations.
+The streams can be classifies into:
+* Byte Stream
+* Character Stream
+
+
 
 How does oop differ from structures in c:
 ----------------------------------------
