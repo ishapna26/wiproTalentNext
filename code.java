@@ -65,6 +65,7 @@ class Main3{
 		System.out.print(c);
 	}
 }
+
 //find singledigit sum
 public static int fsum(int n) {
     int sum = 0;
@@ -83,3 +84,5 @@ public static int fsum(int n) {
 
     return fsum(sum * originalSign);  // Recurse with signed sum
 }
+
+//Is Palindrome Possible by Rearranging the Digits
