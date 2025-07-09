@@ -65,3 +65,21 @@ class Main3{
 		System.out.print(c);
 	}
 }
+//find singledigit sum
+public static int fsum(int n) {
+    int sum = 0;
+    int originalSign = n < 0 ? -1 : 1;
+    n = Math.abs(n);  // Work with positive digits
+
+    while (n > 0) {
+        int mod = n % 10;
+        sum += mod;
+        n = n / 10;
+    }
+
+    if (sum <= 9) {
+        return sum * originalSign;  // Restore the original sign
+    }
+
+    return fsum(sum * originalSign);  // Recurse with signed sum
+}
