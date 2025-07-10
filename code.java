@@ -86,3 +86,62 @@ public static int fsum(int n) {
 }
 
 //Is Palindrome Possible by Rearranging the Digits
+There are two possibilities:
+	1. even length - xx ( HERE NO ODD FREQUENCIES OF A DIGIT)
+	2. odd length - xyx (ONLY ONE DIGIT CAN HAVE ODD FREUENCY)
+
+import java.util.*;
+
+class Main3{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		boolean flag=true;
+		int[] a=new int[10];
+		int c=0,count=0;
+		while(n>0) {
+			int mod=n%10;
+			c++;
+			a[mod]+=1;
+			n=n/10;
+		}
+
+		//even length number
+		if(c%2==0) {
+			for(int i=0;i<10;i++) {
+				if(a[i]%2!=0) {
+					flag=false;
+					break;
+				}
+				
+			}
+			if(flag) {
+				System.out.print("palindrome possible");
+			}
+			else {
+				System.out.print("palindrome impossible");
+			}
+		}
+		//odd length number
+		else {
+			for(int i=0;i<10;i++) {
+				if(a[i]%2!=0) {
+					count++;
+				}
+			}
+			if(count>1) {
+				flag=false;
+			}
+			else {
+				flag=true;
+			}
+			
+			if(flag) {
+				System.out.print("palindrome possible");
+			}
+			else {
+				System.out.print("palindrome impossible");
+			}
+		}
+	}
+}
