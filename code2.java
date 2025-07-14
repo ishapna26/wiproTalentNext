@@ -59,3 +59,48 @@ class Main{
         }
     }
 }
+
+3. weight of the string
+import java.util.*;
+
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int weight=0;
+        String str=sc.nextLine();
+        int n=sc.nextInt();
+        
+        for(int i=0;i<str.length();i++){
+            char ch=str.charAt(i);
+            if(n==0){
+                if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U'){
+                   continue;
+                }
+                else if(ch==' '||ch=='!'){
+                    ch=0;
+                    weight+=ch;
+                }
+                else if(ch>=65 && ch<=90){
+                       weight+=ch-64;
+                }
+                else if(ch>=97&&ch<=122){
+                    weight+=ch-96;
+                }
+                
+            }
+            else{
+                if(ch==' '||ch=='!'){
+                    ch=0;
+                    weight+=ch;
+                }
+                else if(ch>=65 && ch<=90){
+                       weight+=ch-64;
+                }
+                else if(ch>=97&&ch<=122){
+                    weight+=ch-96;
+                }
+            }
+        }
+        System.out.print(weight);
+    }
+}
