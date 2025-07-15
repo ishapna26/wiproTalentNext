@@ -104,3 +104,26 @@ class Main{
         System.out.print(weight);
     }
 }
+
+4. import java.util.*;
+
+class Main7{
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		String[] words=new String[3];
+		String new_s="";
+		for(int i=0;i<words.length;i++) {
+			words[i]=sc.next();
+		}
+		for(int i=0;i<words.length;i++) {
+			String word=words[i];
+			char ch=word.charAt(0);
+			if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'||
+			   ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U') {
+				new_s+=""+word+"";
+			}
+		}
+		System.out.print(new_s);
+	}
+}
