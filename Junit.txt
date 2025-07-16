@@ -1,1 +1,7 @@
 www.junit.org
+
+Basic components of junit:
+
+Testcase: single unit test to test a specific piece of code.
+annotation: 
+assertion
