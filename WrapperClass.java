@@ -1,9 +1,11 @@
-Every class in java extends java object class
-In java there are primitive data types. Hence these datatypes makes java 99.99℅ object oriented. Since it is not an object
-Collection is similar to array
+x Every class in java extends java object class
+  
+In java there are primitive data types. Hence these datatypes makes java 99.99℅ object oriented. Since it is not an object Collection is similar to array
 It is a object type where as array is object type
-Wrapper class
-That why java has wrapper class
+  
+Wrapper class:
+-------------
+Thats why java has wrapper class
 For every primitive type we have class format
 For eg we can declare a  integer in two ways
 int n=7 or
@@ -15,3 +17,9 @@ int num=7
 Integer n = num
 int n2=n.intValue() // this is called unboxing
 Int n2=n //auto unboxing
+
+why we need wrapper class:
+--------------------------
+1. Collections classes can store only the object we cant store normal integer or any primitive datatye values.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
