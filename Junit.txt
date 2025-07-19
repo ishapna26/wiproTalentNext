@@ -8,11 +8,14 @@ Hence unit testing is a component testing where each modules are tested carefull
 
 JUNIT4 Framework:
 -----------------
-- Junit is a open source testing framework in java
+- Junit is a open source testing framework in java.
 - Junit testcases=> Java classes with testing methods
-- simple framework for creating autmated test units.
+- simple framework for creating automated test units.
 
-
+Junit advantages:
+-----------------
+1. Eay / simple to use
+2. Can test an entire class (single class) at a time
 www.junit.org
 
 Basic components of junit:
