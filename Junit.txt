@@ -1,7 +1,18 @@
+Unit Testing:
+------------
+- Imagine that you are working for an IT outsourcing company. (A company that works for other organization/company to manage their IT services).
+- Software Development Lifecycle consists of various developmental hases. 1 Requirement analysis 2. Functional Specification 3. Design 4. Code
+- During these phases the testers test the code developed by the developers against all the possible testcases to make sure the module is working correctly.
+
+Hence unit testing is a component testing where each modules are tested carefully against all the possible testcases.
+
+JUNIT:
+-----
+
 www.junit.org
 
 Basic components of junit:
-
-Testcase: single unit test to test a specific piece of code.
-annotation: 
-assertion
+--------------------------
+1. Testcase: single unit test to test a specific piece of code.
+2. annotation: 
+3. assertion
