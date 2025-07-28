@@ -69,3 +69,54 @@ class Main8{
 		System.out.print(result);
 	}
 }
+
+3. Find the highest frequency of the element
+import java.util.*;
+
+class Main9 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] a = new int[n];
+
+        for(int i = 0; i < n; i++) {
+            a[i] = sc.nextInt();
+        }
+
+        int res = 0;
+        int[] count = new int[10];
+
+        // Count frequency of each digit
+        for(int i = 0; i < n; i++) {
+            countFrequency(a[i], count);
+        }
+
+        int max = Integer.MIN_VALUE;
+
+        // Find the max frequency
+        for(int i = 0; i < 10; i++) {
+            if(count[i] > max) {
+                max = count[i];
+            }
+        }
+
+        // Find the smallest digit with max frequency
+        for(int i = 0; i < 10; i++) {
+            if(count[i] == max) {
+                res = i;
+                break;
+            }
+        }
+
+        System.out.print(res);
+    }
+
+    public static void countFrequency(int n, int[] count) {
+        while(n > 0) {
+            int mod = n % 10;
+            count[mod]++;
+            n = n / 10;
+        }
+    }
+}
+
