@@ -122,3 +122,46 @@ class Main9 {
     }
 }
 
+4. Encode the string
+import java.util.*;
+
+class Main9{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String s1=sc.next();
+		String s2=sc.next();
+		String s3=sc.next();
+		String[] words= {s1,s2,s3};
+		String first="";
+		String middle="";
+		String last="";
+		
+		for(int i=0;i<3;i++) {
+			String word=words[i];
+			int len=word.length();
+			if(len%3==0) {
+				int end=len/3;
+				first+=word.substring(0,end);
+				middle+=word.substring(end,len-end);
+				last+=word.substring(len-end,len);
+			}
+			if(len%3==1) {
+				int end=len/3;
+				first+=word.substring(0,end);
+				middle+=word.substring(end,len-end);
+				last+=word.substring(len-end,len);
+			}
+			if(len%3==2) {
+				int end=len/3;
+				first+=word.substring(0,end+1);
+				middle+=word.substring(end+1,len-end-1);
+				last+=word.substring(len-end-1,len);
+			}
+		}
+		System.out.println(first);
+		System.out.println(middle);
+		System.out.println(last.toUpperCase());
+
+	}
+}
+
