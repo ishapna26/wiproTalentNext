@@ -165,3 +165,57 @@ class Main9{
 	}
 }
 
+//code for sum stable - sum unstable
+import java.util.*;
+
+class Main9{
+	public static void main(String[] args) {
+		
+		ArrayList<Integer>stable=new ArrayList<>();
+		ArrayList<Integer>unstable=new ArrayList<>();
+		
+		int[] num= {3636,101,1414,456,788};
+		
+		for(int i=0;i<num.length;i++) {
+			find(num[i],stable,unstable);
+		}
+		for(int n1:stable) {
+			System.out.print(n1+" ");
+		}
+	}
+	
+	public static void find(int n,ArrayList<Integer> stable, ArrayList<Integer>unstable) {
+		int original=n;
+		boolean isStable=true;
+		int[] freq=new int[10];
+		ArrayList<Integer> a=new ArrayList<>();
+		
+		while(n>0) {
+			int mod=n%10;
+			freq[mod]++;
+			n=n/10;
+		}
+		
+		for(int i=0;i<10;i++) {
+			if(freq[i]>=1) {
+				a.add(freq[i]);
+			}
+		}
+		for(int i=0;i<a.size()-1;i++) {
+			if(a.get(i)!=a.get(i+1)) {
+				isStable=false;
+				break;
+			}
+			else {
+				isStable=true;
+			}
+		}
+		if(isStable) {
+			stable.add(original);
+		}
+		else {
+			unstable.add(original);
+		}
+		
+	}
+}
