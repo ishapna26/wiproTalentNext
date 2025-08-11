@@ -1,3 +1,4 @@
+//Nambiar Number
 int n = input1.length();
 ArrayList<Integer> num = new ArrayList<>();
 int firstNum = input1.charAt(0) - '0';
@@ -39,3 +40,41 @@ for (int j : num) {
 }
 int out = Integer.parseInt(res.toString());
 return out;
+
+
+//remove one number to form plaindrome
+    String str=Integer.toString(input1);
+        int i=0;
+        int j=str.length()-1;
+        int flag=0;
+        char a='a';
+        while(i<j)
+        {   if(str.charAt(i)!=str.charAt(j))
+                {
+                     if(str.charAt(i)==str.charAt(j-1))
+                     {
+                         a=str.charAt(j);
+                         flag=1;
+                         break;
+                         
+                     }
+                     else if(str.charAt(j)==str.charAt(i+1))
+                     {
+                         a=str.charAt(i);
+                         flag=1;
+                         break;
+                     }
+
+
+
+                }
+            i++;
+            j--;
+
+        }
+        if(flag==0)
+        return -1;
+        else
+        return Integer.parseInt(Character.toString(a));
+    }
+}
